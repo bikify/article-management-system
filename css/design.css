@@ -1,0 +1,41 @@
+
+
+.container-left{
+	position:static;
+	height:662px;
+	width:216px;
+	background:black;
+	margin-left:0px;
+}
+.container-left p{
+	margin:auto;
+	color:white;
+	display:block;
+
+}
+
+.container-left form{
+	display:block;
+}
+form input{
+
+display:block;
+background:transparent;
+color:white;
+border:none;
+outline:none;
+margin-left:25px;
+margin-bottom:20px;
+
+}
+form input:hover{
+	
+	color:#f89cf5;
+}
+.container-right{
+	margin-left:217px;
+	position:absolute;
+	top:0px;
+	width:1110px;
+	
+}
