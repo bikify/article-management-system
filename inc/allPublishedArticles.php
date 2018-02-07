@@ -14,7 +14,8 @@ $result = mysqli_query($connection, $sql);
 		if (mysqli_num_rows($result) >0) {
 			while($row = mysqli_fetch_assoc($result)) {
 				echo "<h2>".$row['articleName']."</h2>";
-				echo "<p>".$row['articleContent']."</p>";
+				$text=$row['articleContent'];
+				echo "<p>".nl2br($text)."</p>";
 				echo"Published Date :<sub>".$row['publishDate']."</sub><br>";
 				echo "Author :".$row['user_name'];
 				$articleId=$row['articleId'];
