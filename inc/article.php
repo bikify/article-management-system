@@ -34,7 +34,8 @@ require_once"connect.inc.php";
 				
 				while($row = mysqli_fetch_assoc($result)){
 					echo "<h2>".$row['articleName']."</h2>";
-					echo "<p>".$row['articleContent']."</p>";
+					$text=$row['articleContent'];
+				        echo "<p>".nl2br($text)."</p>";
 				}
 			}
 		}else
