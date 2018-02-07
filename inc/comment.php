@@ -12,12 +12,13 @@
 					$user_name=$row['user_name'];
 					$sql_get_user_profile_picture="SELECT * FROM `mgt_user` where user_name='$user_name'";
 					$result_query_pic=mysqli_query($connection,$sql_get_user_profile_picture);
+					
 					while($row_picture= mysqli_fetch_assoc($result_query_pic))
 					{
 						$image = $row_picture['profile_picture'];
-						echo"<img src='$image' class='img-circle' width='35px' height='40px'>";
 					}	
-					echo "<mark>".$row['user_name']."</mark>";
+					
+					echo '<a href="profile.php?id=' . $row['user_name'] . '">'."<img src='$image' class='img-circle' width='35px' height='40px'>"."<mark>".$row['user_name']."</mark>".'</a>';
 					echo' said <br>';
 					echo $row['commentContent'];
 					echo'<br>';
