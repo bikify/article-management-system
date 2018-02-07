@@ -48,7 +48,7 @@ require_once"connect.inc.php";
 			}else{
 			    header("location:404.php");  	
 			}
-			//article Dosn't Exist
+			//user Dosn't Exist
 			
 		}
     }
