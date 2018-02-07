@@ -7,10 +7,10 @@
 *		 DOSN'T EXIST ALREADY
 
 **/
-$host="localhost";
-$username="root";
-$password="";
-$dbname="managment";
+$host="localhost";     //SERVER NAME
+$username="root";      //DATABASE USERNAME
+$password="";          // DATABASE USER PASSWORD
+$dbname="managment";   //DATABASE NAME
 $connection=mysqli_connect($host,$username,$password,$dbname);
 
 session_start();                       //START A NEW SESSION 
