@@ -3,8 +3,6 @@
 img{
 	width:120px;
 	height:150px;
-	
-	
 }
 </style>
 
@@ -15,21 +13,15 @@ img{
 <script src="../css/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
-<?php
-require_once"login.php";
-if(isLogin()){
-	include"login-header.php";
-	
-}
 
-?>
 <?php
 require_once"login.php";
 require_once"functions.php";
 require_once"connect.inc.php";
-
-
-	$id = mysqli_real_escape_string($connection,validate(($_GET['id'])));
+     require_once"login.php";
+	
+  
+	$id = mysqli_real_escape_string($connection,validate(($_GET['id']))) or header("location:login-header.php");;
     if(isset($id))
 	{
 		$sql = "SELECT * FROM `mgt_user` where user_name='$id'";
@@ -51,12 +43,16 @@ require_once"connect.inc.php";
 			}
 		}else
 		{
+			if(isLogin()){
+	         	include"login-header.php";
+			}else{
+			    header("location:404.php");  	
+			}
 			//article Dosn't Exist
-			header("location:404.php");
+			
 		}
     }
 
 
 
 ?>
-
