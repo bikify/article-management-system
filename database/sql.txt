@@ -1,0 +1,9 @@
+CREATE DATABASE managment;
+use managment;
+create TABLE mgt_user( user_name varchar (33) primary KEY,first_name varchar(33) not null,last_name varchar(33) not null,user_email varchar(100),confirm_user_password varchar(33),profile_picture varchar (200));
+
+CREATE TABLE categroy (categoryId int(5) PRIMARY KEY AUTO_INCREMENT,categoryName varchar (33) not null, user_name varchar(33), FOREIGN key (user_name) REFERENCES mgt_user (user_name) );
+
+CREATE table article (articleId int (5) PRIMARY KEY AUTO_INCREMENT,articleName varchar(200) not null ,articleContent text not null, publishDate varchar (40) not null,categoryId int (5),user_name varchar (33), FOREIGN key (categoryId) REFERENCES categroy (categoryId) , FOREIGN key (user_name) REFERENCES mgt_user(user_name) );
+
+CREATE TABLE mgt_comment (commentId int (10) PRIMARY key AUTO_INCREMENT, commentContent text not null ,publishedDate varchar (40) not null,articleId int (5),user_name varchar (33),FOREIGN key (articleId) REFERENCES article (articleId),FOREIGN key (user_name) REFERENCES mgt_user(user_name));
