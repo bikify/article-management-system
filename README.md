@@ -1,6 +1,6 @@
 # articleManagmentSystem
 
-Run file in DATBASE FOLDER
+Run managment.sql file in DATBASE FOLDER
 
 in phpmyadmin in sql query box
 
@@ -8,7 +8,11 @@ it is first step to start with using article managment system
 
 
 
+/////////////////////
+                 
+                 Cnfiguration file in inc filder with connect.inc.php
 
+/////////////////////
 
 
 THIS FOLDER CONTAINS ALL FILES INCLUDING SCRIPTS/SERVER SIDE SCRIPTS/HTML/CSS
