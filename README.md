@@ -10,7 +10,7 @@ it is first step to start with using article managment system
 
 /////////////////////
                  
-                 Cnfiguration file in inc filder with connect.inc.php
+                 Cnfiguration file in inc folder with connect.inc.php
 
 /////////////////////
 
