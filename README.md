@@ -1,6 +1,7 @@
 # articleManagmentSystem
 
-Run managment.sql file in DATBASE FOLDER
+                    Run managment.sql file in DATBASE FOLDER
+
 
 in phpmyadmin in sql query box
 
@@ -37,4 +38,4 @@ It includes different functions to be performed if a user is logged in. and as w
 10. Read Comments of other users  
 11. View Profile Of other Users
 
-copyright©waqarhussain.me 
+  <mark>waqarhussainch@hotmail.com</mark> 
