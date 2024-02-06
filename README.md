@@ -1,41 +1,35 @@
-# articleManagmentSystem
+# Article Management System
 
-                    Run managment.sql file in DATBASE FOLDER
+The Article Management System is a comprehensive platform that allows users to manage articles. It provides functionalities such as user authentication, article creation, deletion, and reading, category creation, and commenting on articles.
 
+## Getting Started
 
-in phpmyadmin in sql query box
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-it is first step to start with using article managment system
+### Prerequisites
 
+You need to have PHP and MySQL installed on your machine to run this project.
 
+### Installation
 
-/////////////////////
-                 
-                 Cnfiguration file in inc folder with connect.inc.php
+1. Clone the repo: `git clone https://github.com/yourusername/articleManagmentSystem.git`
+2. Navigate to the `DATABASE` folder and run the `managment.sql` file in your MySQL server.
+3. Update the configuration file in the `inc` folder with your MySQL credentials.
 
-/////////////////////
+## Features
 
+Here are the main features of the Article Management System:
 
-THIS FOLDER CONTAINS ALL FILES INCLUDING SCRIPTS/SERVER SIDE SCRIPTS/HTML/CSS
+1. **User Authentication**: Allows users to sign up and log in to the system.
+2. **Article Management**: Users can create, read, and delete articles.
+3. **Category Management**: Users can create categories for articles.
+4. **Commenting**: Users can comment on articles and read comments from other users.
+5. **Profile Viewing**: Users can view the profiles of other users.
 
-////////  INC ////////
+## Usage
 
-IT CONTAINS ALL FILES THAT ARE AVAILABLE TO BE INCLUDE IN COMPLETE MANAGEMENT SYSTEM
+After setting up the project, you can start using the system by logging in or signing up. Once logged in, you can create, read, and delete articles, create categories, comment on articles, and view other users' profiles.
 
-/////////////////////
+## Contact
 
-It includes different functions to be performed if a user is logged in. and as well as it also able a new user to create an account. and then logged in to System. 
-#Here Basic functionalities are  
-1. Signup  
-2. Login  
-3. Read Articles  
-4. Create Articles 
-5. Delete Articles
-6. View Published Articles 
-7. Create Category  
-8. View Articles published in Specific Category 
-9. Comment on Article 
-10. Read Comments of other users  
-11. View Profile Of other Users
-
-  <mark>waqarhussainch@hotmail.com</mark> 
+For any queries, you can reach out to me at waqarhussainch@hotmail.com.
